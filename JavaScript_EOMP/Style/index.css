@@ -26,7 +26,7 @@ h3{
 
 
 .slogan-1{
-margin-bottom: 19rem;
+margin-bottom: 19rem !important;
 font-size: 100px !important;
 text-shadow: 6px 6px #000000;
 }
@@ -76,9 +76,6 @@ text-shadow: 6px 6px #000000;
     margin-top: 4rem;
     margin-left: 3rem;
     color: rgb(5, 143, 143) !important;
-}
-.card-content-1 :hover {
-    background-color: #000000;
 }
 .card-content-2{
     display: grid;

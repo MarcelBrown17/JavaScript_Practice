@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/contact.css">
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -28,7 +29,6 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
   rel="stylesheet"
 />
-<link rel="stylesheet" href="/Style/contact.css">
     <title>Products Page</title>
 </head>
 <header>
@@ -39,25 +39,25 @@
                 <div class="logo1"><img src="https://i.postimg.cc/nrqdrvp3/sk8-logo.png" alt="logo" height="36"></div>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">🛹</span>
               </button>
               <div class="header1"><h1 class="display-3 text-light fw-bold">SK8</h1></div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto fs-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html" target="_self">Home</a>
+                    <a class="nav-link" aria-current="page" href="/index.html" target="_self">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/HTML_Page/products.html" target="_self">Products</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/HTML_Page/contact.html" target="_self">Contact</a>
+                    <a class="nav-link" aria-current="page" href="/HTML_Page/admin.html" target="_self">Admin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/HTML_Page/contact.html" target="_self">Contact</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/HTML_Page/about.html" target="_self">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" target="_self">Cart</a>
                   </li>
                 </ul>
               </div>
@@ -66,171 +66,89 @@
     </div>
 </header>
 <body>
+  <section>
+<div class="form-container">
+  <div class="container align-middle">
+  <div class="container">
+    <div class=" text-center">
 
-<!--Section: Contact v.2-->
-<div class="contact-form-container">
-  <div class="container my-5 py-5 z-depth-1">
+        <h1 class="display-1 text-center text-dark fw-bold">Contact</h1>
+            
+        
+    </div>
 
 
-    <!--Section: Content-->
-    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+  <div class="row ">
+  <div class="col-lg-7 mx-auto">
+    <div class="card mt-2 mx-auto p-4 bg-dark rounded-4">
+        <div class="card-body bg-light text-dark">
+   
+        <div class = "container">
+                         <form id="contact-form" role="form" action="https://formspree.io/f/xwkjzpjg"
+                         method="POST">
+                          
+        <div class="controls">
 
-      <!--Grid row-->
-      <div class="row">
-
-        <!--Grid column-->
-        <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
-
-          <h3 class="font-weight-bold">Contact Us</h3>
-
-          <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
-            molestiae
-            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.</p>
-
-          <p><span class="font-weight-bold mr-2">Email:</span><a href="">contact@mycompany.com</a></p>
-          <p><span class="font-weight-bold mr-2">Phone:</span><a href="">+48 123 456 789</a></p>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
-
-          <!--Grid row-->
-          <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-6">
-
-              <!-- Material outline input -->
-              <div class="md-form md-outline mb-0">
-                <input type="text" id="form-first-name" class="form-control">
-                <label for="form-first-name">First name</label>
-              </div>
-
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group ">
+                        <label for="form_name">Firstname</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname" required="required" data-error="Firstname is required.">
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_lastname">Lastname</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname" required="required" data-error="Lastname is required.">
+                                                        </div>
+                </div>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6">
-
-              <!-- Material outline input -->
-              <div class="md-form md-outline mb-0">
-                <input type="text" id="form-last-name" class="form-control">
-                <label for="form-last-name">Last name</label>
-              </div>
-
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_email">Email</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_need">Reason for contacting us</label>
+                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your gender.">
+                            <option value="" selected disabled>--Select Your Reason--</option>
+                            <option >Reporting a bug</option>
+                            <option >Recruitment</option>
+                            <option >Other</option>
+                        </select>
+                        
+                    </div>
+                </div>
             </div>
-            <!--Grid column-->
+            <div class="row mx-auto">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea
+                            >
+                        </div>
 
+                    </div>
+
+
+                <div class="col-md-12">
+                    
+                    <input type="submit" class="btn btn-dark btn-send pt-2 btn-block
+                        " value="Send Message" >
+                
+            </div>
+            </div>
           </div>
-          <!--Grid row-->
-
-          <!-- Material outline input -->
-          <div class="md-form md-outline mt-3">
-            <input type="email" id="form-email" class="form-control">
-            <label for="form-email">E-mail</label>
-          </div>
-
-          <!-- Material outline input -->
-          <div class="md-form md-outline">
-            <input type="text" id="form-subject" class="form-control">
-            <label for="form-subject">Subject</label>
-          </div>
-
-          <!--Material textarea-->
-          <div class="md-form md-outline mb-3">
-            <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
-            <label for="form-message">How we can help?</label>
-          </div>
-
-          <button type="submit" class="btn btn-info btn-sm ml-0">Submit<i class="far fa-paper-plane ml-2"></i></button>
-
+     </form>
+    </div>
         </div>
-        <!--Grid column-->
-
-      </div>
-      <!--Grid row-->
-
-
-    </section>
-    <!--Section: Content-->
-
-
-  </div>
 </div>
-
-                <!-- Footer -->
-<footer class="bg-dark text-center ">
-    <!-- Grid container -->
-    <div class="container p-4">
-  
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-  
-        <!-- Google -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-  
-        <!-- Github -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
-  
-  
-  
-  
-      <!-- Section: Links -->
-      <section class="">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <a href="#"> <h5 class="text-uppercase text-light">Home</h5></a>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <a href="#"> <h5 class="text-uppercase text-light">Products</h5></a>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <a href="#"> <h5 class="text-uppercase text-light">Contact</h5></a>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <a href="#"> <h5 class="text-uppercase text-light">About</h5></a>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
-  
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023 Copyright:
-      <a class="text-light" href="">Marcel</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+</section>
      <!-- Script Source -->
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -254,5 +172,75 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
 <script src="https://kit.fontawesome.com/95273b878a.js" crossorigin="anonymous"></script>
      <!-- Script Source -->
 </body>
-           
+                  <!-- Footer -->
+                  <footer class="bg-dark text-center mt-3">
+                    <!-- Grid container -->
+                    <div class="container p-4">
+                  
+                      <!-- Section: Social media -->
+                      <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                  
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                  
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+                  
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #e019b5" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                  
+                        <!-- Github -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #636363" href="#!" role="button"><i class="fab fa-github"></i></a>
+                      </section>
+                      <!-- Section: Social media -->
+                  
+                  
+                  
+                  
+                      <!-- Section: Links -->
+                      <section class="links">
+                        <!--Grid row-->
+                        <div class="row">
+                          <!--Grid column-->
+                          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <a href="/index.html"> <h5 class="text-uppercase text-light">Home</h5></a>
+                          </div>
+                          <!--Grid column-->
+                  
+                          <!--Grid column-->
+                          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <a href="/HTML_Page/products.html"> <h5 class="text-uppercase text-light">Products</h5></a>
+                          </div>
+                          <!--Grid column-->
+                  
+                          <!--Grid column-->
+                          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <a href="/HTML_Page/admin.html"> <h5 class="text-uppercase text-light">Admin</h5></a>
+                          </div>
+                          <!--Grid column-->
+                  
+                          <!--Grid column-->
+                          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <a href="/HTML_Page/about.html"> <h5 class="text-uppercase text-light">About</h5></a>
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                      </section>
+                      <!-- Section: Links -->
+                  
+                    </div>
+                    <!-- Grid container -->
+                  
+                    <!-- Copyright -->
+                    <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2)">
+                      © 2023 Copyright:
+                      <a class="text-light" href="">Marcel</a>
+                    </div>
+                    <!-- Copyright -->
+                  
+                  </footer>
+                  <!-- Footer -->
 </html>
