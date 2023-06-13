@@ -16,7 +16,9 @@ font-family: 'Lato', sans-serif !important;
 font-family: 'Raleway', sans-serif !important;
 }
 
-
+.container{
+  margin: auto;
+}
 
 .heading{
   margin-top: 30px;
@@ -53,7 +55,7 @@ font-family: 'Raleway', sans-serif !important;
     grid-template-columns: repeat(3, 3fr);
   }
   .products img {
-    width: 290px;
+    width: 210px;
     height: 270px;
   }
   .products .item {
@@ -215,7 +217,7 @@ margin-top: 5rem;
     .products{
       display: grid;
       grid-template-columns: repeat(1, 3fr) !important;
-      margin: auto;
+
       width: 250px;
     }
     footer{
@@ -233,13 +235,9 @@ margin-top: 5rem;
       display: flex;
       flex-direction: column;
     }
-    .item{
-      width: 250px !important;
-    }
   }
 
-  .item-container{
-    width: 350px !important;
-    margin: 10px 25px !important;
+  .item{
+    margin-bottom:10px;
   }
 

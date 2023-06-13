@@ -11,7 +11,7 @@ let title = document.querySelector('#title')
 addbook.addEventListener('click', addData)
 function addData(e){
     e.preventDefault();
-    if(nameSkateboard.value == '' && author.value == ''){
+    if(nameBook.value == '' && author.value == ''){
       alert('Inputs are empty')
     } else{
       products.push({
@@ -22,7 +22,7 @@ function addData(e){
           cost: price.value,
       })
     }
-    nameSkateboard.value = ''
+    nameBook.value = ''
     author.value = ''
     price.value = ''
     picture.value = ''
