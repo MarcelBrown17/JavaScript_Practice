@@ -53,7 +53,7 @@ font-family: 'Raleway', sans-serif !important;
     grid-template-columns: repeat(3, 3fr);
   }
   .products img {
-    width: 210px;
+    width: 290px;
     height: 270px;
   }
   .products .item {
@@ -239,7 +239,7 @@ margin-top: 5rem;
   }
 
   .item-container{
-    width: 400px !important;
+    width: 350px !important;
     margin: 10px 25px !important;
   }
 
