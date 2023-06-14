@@ -43,25 +43,26 @@ text-shadow: 6px 6px #000000;
 
 
 .card1{
-    background-image: url(https://i.postimg.cc/25hLDyz7/2507643.jpg);
+    background-image: url(https://i.postimg.cc/K85JRKzQ/skater-boy-in-style-iumzy5wkdl11pqsf.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 500px !important;
+    height: 520px !important;
     color: white;
 }
 .card2{
     background-image: url(https://i.postimg.cc/TPbRmTL5/action-active-activity-fun.jpg);
     width: 100%;
-    height: 500px !important;
+    height: 520px !important;
     color: white;
 }
 .card3{
     background-image: url(https://i.postimg.cc/6py6WrB0/sports-skateboarding-wallpaper-preview.jpg) !important;
     width: 100%;
-    height: 500px !important;
+    height: 520px !important;
     color: white;
+    background-position: center;
 }
 .cards {
     display: flex;
@@ -72,10 +73,11 @@ text-shadow: 6px 6px #000000;
 
 .card-content-1{
     display: grid;
-    text-align: left;
+    text-align: right;
     margin-top: 4rem;
-    margin-left: 3rem;
-    color: rgb(5, 143, 143) !important;
+    margin-right: 3rem;
+    color: rgb(4, 153, 153) !important;
+    font-weight: bold !important;
 }
 .card-content-2{
     display: grid;
@@ -93,6 +95,7 @@ text-shadow: 6px 6px #000000;
     margin-top: 20rem;
     font-weight: bold;
     color: rgb(255, 255, 255) !important;
+        font-weight: bold !important;
 }
 
 @media only screen and (max-width:300px) {

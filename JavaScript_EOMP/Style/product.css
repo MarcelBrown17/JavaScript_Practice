@@ -43,7 +43,7 @@ font-family: 'Raleway', sans-serif !important;
     width: 100%;
     padding-top: 20px;
     margin-bottom: 2rem;
-       justify-content:center;
+ margin: auto;
   }
   
   /* PRODUCTS */
@@ -53,6 +53,7 @@ font-family: 'Raleway', sans-serif !important;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(3, 3fr);
+    margin: auto;
   }
   .products img {
     width: 210px;
